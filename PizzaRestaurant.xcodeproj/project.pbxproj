@@ -11,6 +11,8 @@
 		6001EC84197B4EC300F97011 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC83197B4EC300F97011 /* main.m */; };
 		6001EC90197B502F00F97011 /* Kitchen.m in Sources */ = {isa = PBXBuildFile; fileRef = 6001EC8F197B502F00F97011 /* Kitchen.m */; };
 		9B07F46F22FB33EC00B29CB5 /* Pizza.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07F46E22FB33EC00B29CB5 /* Pizza.m */; };
+		9B07F4B322FBF0B900B29CB5 /* Mona.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07F4B222FBF0B900B29CB5 /* Mona.m */; };
+		9B07F4B622FBF27700B29CB5 /* Sam.m in Sources */ = {isa = PBXBuildFile; fileRef = 9B07F4B522FBF27700B29CB5 /* Sam.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,6 +36,10 @@
 		6001EC8F197B502F00F97011 /* Kitchen.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Kitchen.m; sourceTree = "<group>"; };
 		9B07F46D22FB33EC00B29CB5 /* Pizza.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Pizza.h; sourceTree = "<group>"; };
 		9B07F46E22FB33EC00B29CB5 /* Pizza.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Pizza.m; sourceTree = "<group>"; };
+		9B07F4B122FBF0B900B29CB5 /* Mona.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Mona.h; sourceTree = "<group>"; };
+		9B07F4B222FBF0B900B29CB5 /* Mona.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Mona.m; sourceTree = "<group>"; };
+		9B07F4B422FBF27700B29CB5 /* Sam.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Sam.h; sourceTree = "<group>"; };
+		9B07F4B522FBF27700B29CB5 /* Sam.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Sam.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +88,10 @@
 				6001EC85197B4EC300F97011 /* Supporting Files */,
 				9B07F46D22FB33EC00B29CB5 /* Pizza.h */,
 				9B07F46E22FB33EC00B29CB5 /* Pizza.m */,
+				9B07F4B122FBF0B900B29CB5 /* Mona.h */,
+				9B07F4B222FBF0B900B29CB5 /* Mona.m */,
+				9B07F4B422FBF27700B29CB5 /* Sam.h */,
+				9B07F4B522FBF27700B29CB5 /* Sam.m */,
 			);
 			path = PizzaRestaurant;
 			sourceTree = "<group>";
@@ -149,6 +159,8 @@
 				9B07F46F22FB33EC00B29CB5 /* Pizza.m in Sources */,
 				6001EC90197B502F00F97011 /* Kitchen.m in Sources */,
 				6001EC84197B4EC300F97011 /* main.m in Sources */,
+				9B07F4B622FBF27700B29CB5 /* Sam.m in Sources */,
+				9B07F4B322FBF0B900B29CB5 /* Mona.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -22,7 +22,7 @@
     return  [[Pizza alloc]initWithSize:LARGE andToppings:@[@"pepperoni", @"ham" ,@"cheese"]];
 }
 +(Pizza *) meatLoversWithSize :(PizzaSize) size {
-    return  [[Pizza alloc]initWithSize:LARGE andToppings:@[@"meat", @"ham" ,@"cheese"]];
+    return  [[Pizza alloc]initWithSize:size andToppings:@[@"meat", @"ham" ,@"cheese"]];
 }
              
 +(PizzaSize) sizeFromString : (NSString *) str{
