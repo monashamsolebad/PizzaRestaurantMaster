@@ -9,6 +9,7 @@
 #import "Sam.h"
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "DeliveryService.h"
 
 @implementation Sam
 
@@ -22,6 +23,7 @@
 
 - (void)kitchenDidMakePizza:(Pizza *)pizza{
     NSLog(@"Thank You Guys!");
+    [_deliveryService deliverPizza:pizza];
 }
 
 @end

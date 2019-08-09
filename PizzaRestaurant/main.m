@@ -12,6 +12,7 @@
 #import "Pizza.h"
 #import "Mona.h"
 #import "Sam.h"
+#import "DeliveryService.h"
 
 int main(int argc, const char * argv[])
 {
@@ -20,11 +21,13 @@ int main(int argc, const char * argv[])
         
         Kitchen *restaurantKitchen = [Kitchen new];
         Mona *mona = [Mona new];
-        Sam *sam = [Sam new];
+        DeliveryService *deliverService = [DeliveryService new];
+        mona.deliveryService = deliverService;
+        restaurantKitchen.delegate = mona;
         
         while (TRUE) {
             
-            NSLog(@"Please pick the manager(mona,sam,none) and your pizza size and toppings:");
+            NSLog(@"Please pick the your pizza size and toppings:");
             NSLog(@"> ");
             char str[100];
             fgets (str, 100, stdin);
@@ -36,19 +39,8 @@ int main(int argc, const char * argv[])
             
             // Take the first word of the command as the size, and the rest as the toppings
             NSArray *commandWords = [inputString componentsSeparatedByString:@" "];
-            NSString *manager = commandWords[0];
-            NSString *sizeInput = commandWords[1];
-            NSArray *toppings= [commandWords subarrayWithRange:NSMakeRange(2, commandWords.count -2)];
-            
-            restaurantKitchen.delegate = nil;
-            
-            if ([manager isEqualToString:@"mona"]) {
-                restaurantKitchen.delegate = mona;
-            }
-            
-            if ([manager isEqualToString:@"sam"]) {
-                restaurantKitchen.delegate = sam;
-            }
+            NSString *sizeInput = commandWords[0];
+            NSArray *toppings= [commandWords subarrayWithRange:NSMakeRange(1, commandWords.count -1)];
             
             Pizza *pizza;
             
@@ -56,7 +48,7 @@ int main(int argc, const char * argv[])
             
             pizza = [restaurantKitchen makePizzaWithSize:pizSize toppings:toppings];
             
-            NSLog(@"\n Here is your order : %@" , pizza);
+            NSLog(@"%@", [deliverService getDeliveredPizzas]);
         }
         
     }

@@ -9,6 +9,7 @@
 #import "Mona.h"
 #import "Kitchen.h"
 #import "Pizza.h"
+#import "DeliveryService.h"
 
 @implementation Mona
 
@@ -22,6 +23,10 @@
 
 - (BOOL)kitchenShouldUpgradeOrder:(Kitchen *)kitchen{
     return NO;
+}
+
+- (void)kitchenDidMakePizza:(Pizza *)pizza{
+    [_deliveryService deliverPizza:pizza];
 }
 
 @end
